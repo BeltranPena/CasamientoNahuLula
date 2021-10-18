@@ -1,0 +1,39 @@
+body{
+    display: flex;
+    justify-content:center;
+    text-align: center;
+    width: 100%;
+    flex-wrap: wrap;
+    font-family: 'Montserrat';
+    margin: 0;
+}
+
+.presentacion{
+    background-image: url(../images/portada.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+}
+
+.noscasamos{
+    
+}
+
+#nombre{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 115px;
+    
+}
+
+.ceremonia-fiesta{
+    display: flex;
+    align-items: center;
+}
+
+.icons{
+    height: 60px;
+    width: 60px;
+}
