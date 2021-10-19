@@ -4,28 +4,28 @@ body{
     text-align: center;
     width: 100%;
     flex-wrap: wrap;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
 }
 
 .presentacion{
-    background-image: url(../images/portada.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    height: 100vh;
+    position: relative;
+    top: 0;
+    left: 0;
     width: 100%;
-    text-align: center;
 }
 
-.noscasamos{
-    
+#portada{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    opacity: 0.85;
 }
 
 #nombre{
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 115px;
-    
+    position: absolute;
+    top: 100px;
+    left: 36%;
 }
 
 .ceremonia-fiesta{
@@ -33,7 +33,43 @@ body{
     align-items: center;
 }
 
+.box{
+    padding: 50px;
+    
+}
+
 .icons{
     height: 60px;
     width: 60px;
+    opacity: 0.85;
 }
+
+button{
+    background-color:#4c775e;
+    color: white;
+    border-radius: 25px;
+    padding: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-top: 30px;
+    border-color: #4c775e;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    #nombre{  
+        left: 11%;
+        height: 62%;
+        top: 18%;
+    }
+
+    #portada{
+        width: 229%;
+        transform: translate(-199px, 5px);
+        opacity: 0.85;
+    }
+
+    .ceremonia-fiesta{
+        flex-wrap: wrap;
+    }
+}
+  
