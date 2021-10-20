@@ -134,10 +134,11 @@ polygon .arrow-middle {
 }
 
 .asistencia{
-    background-image: url(../images/fondo.jpg);
+    background-image: url(../images/footer.jpg);
     background-size: cover;
     width: 100%;
     padding: 25px;
+    height: auto;
 }
 
 footer{
