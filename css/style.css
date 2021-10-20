@@ -151,9 +151,10 @@ footer p{
 
 @media (min-width: 320px) and (max-width: 480px) {
     #nombre{  
-        left: 6%;
-        height: 70%;
-        top: 9%;
+        left: 15%;
+        height: 44%;
+        width: 71%;
+        top: 26%;
     }
 
     .pantalla{
@@ -187,7 +188,7 @@ footer p{
     .carousel {
         display: block;
         position: relative;
-        width: 330px;
+        width: 323px;
         height: 321px;
         overflow: hidden;
         background-color: #cdcdcd;
@@ -199,7 +200,7 @@ footer p{
     .carousel-item {
         position: absolute;
         display: block;
-        width: 318px;
+        width: 323px;
         height: 321px;
     }
 
