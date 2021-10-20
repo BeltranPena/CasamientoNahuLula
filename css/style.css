@@ -144,6 +144,7 @@ polygon .arrow-middle {
 footer{
     background-color: #4c775e;
     width: 100%;
+    opacity: 0.85;
 }
 
 footer p{
@@ -237,6 +238,15 @@ footer p{
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
+    }
+
+    #more-arrows:active polygon{
+        fill: black;
+        transition: all .2s ease-out;
+    }
+    
+    #more-arrows:active polygon.arrow-bottom {
+        transform: translateY(-18px);
     }
 }
   
