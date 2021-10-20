@@ -15,32 +15,74 @@
 </head>
 <body>
     <section class= "presentacion">
-        <img id="portada" src="./images/portada.jpg">
+        <div class="pantalla">
+            <img id="portada" src="./images/portada.jpg">
+        </div>
+        <div class="mobile">
+            <img id="portada-mobile" src="./images/portada-mobile.jpg">
+        </div>
         <img id="nombre" src="./images/nombres.png">
-       </section>
+        <div class="container">
+            <div class="content">
+              <svg id="more-arrows">
+                <polygon class="arrow-middle" points="37.6,45.8 0.8,18.7 4.4,16.4 37.6,41.2 71.2,16.4 74.5,18.7 "/>
+                <polygon class="arrow-bottom" points="37.6,64 0,36.1 5.1,32.8 37.6,56.8 70.4,32.8 75.5,36.1 "/>
+              </svg>
+            </div>
+          </div>
+    </section>
 
     <section class="ceremonia-fiesta">
         <div class="box">
-            <img class="icons" src="images/icons/diamond-ring.png">
+            <img class="icons" src="./images/icons/diamond-ring.png">
             <h1>CEREMONIA</h1>
             <p>La ceremonia se realizará el 12 de Marzo a las 19:00 horas en la Parroquia Ntra. Sra. del Carmen, Tigre. Tocá el botón de abajo para recibir las indicaciones para llegar.</p>
             <button>LLEGAR A LA CEREMONIA</button>
         </div>
          
         <div class="box">
+            <img class="icons" src="./images/icons/champagne.png">
             <h1>FIESTA</h1>
             <p>Despues de la ceremonia festejaremos en Astilleros, Nordelta. Toca el boton abajo y encontra las indicaciones para llegar, te esperamos</p>
             <button>LLEGAR A LA FIESTA</button>
         </div>
     </section>
     
-    <section class="carrusel">
+    <div class="fotos">
+        <div class="foto1">
+            <img src="./images/nahuylula/uno.jpg">
+        </div>
+        <div class="foto2">
+            <img src="./images/nahuylula/dos.jpg">
+        </div>
+    </div>
 
-    </section>
-    
+    <!--fotos para Mobile-->
+    <div class="carousel">
+        <div class="carousel-item">
+        <div class="uno"></div>
+        </div>
+        <div class="carousel-item">
+        <div class="dos"></div>
+        </div>
+        <div class="carousel-item">
+        <div class="tres"></div>
+        </div>
+        <div class="carousel-item">
+        <div class="cuatro"></div>
+        </div>
+    </div>
     
     <section class="asistencia">
+        <h1>CONFIRMACION DE ASISTENCIA</h1>
+        <h4>Esperamos que seas parte de esta gran celebración. ¡Confirmanos tu asistencia!</h4>
+        <button>CONFIRMAR ASISTENCIA</button>
     </section>
 
+    <footer>
+        <p>¡Gracias por acompañarnos en este momento tan importante!</p>
+    </footer>
+
+    <script src="./js/carrusel.js"></script>
 </body>
 </html>

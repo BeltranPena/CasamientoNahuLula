@@ -22,9 +22,13 @@ body{
     opacity: 0.85;
 }
 
+.mobile{
+    display: none;
+}
+
 #nombre{
     position: absolute;
-    top: 100px;
+    top: 70px;
     left: 36%;
 }
 
@@ -35,7 +39,6 @@ body{
 
 .box{
     padding: 50px;
-    
 }
 
 .icons{
@@ -55,21 +58,183 @@ button{
     border-color: #4c775e;
 }
 
+.fotos{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 50%;
+    margin-bottom: 30px;
+}
+
+.foto1{
+    width:  48%;
+    margin-left: 15px;
+    margin-right: 10px;
+}
+
+.foto1 img{
+    height: 360px;
+    width: 100%;
+}
+
+.foto2{
+    width: 48%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.foto2 img{
+    height: 360px;
+    width: 100%;
+}
+
+.carousel{
+    display:none;
+}
+  
+.container {
+padding: 20px;
+text-align: center;
+}
+
+.content {
+    margin-top: 35vh;
+position: absolute;
+left: 50%;
+top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content p {
+    margin: 0 0 20px;
+}    
+  
+/* Arrow & Hover Animation */
+#more-arrows {
+width: 75px;
+height: 65px;
+}
+
+#more-arrows:hover polygon{
+    fill: black;
+    transition: all .2s ease-out;
+}
+
+#more-arrows:hover polygon.arrow-bottom {
+    transform: translateY(-18px);
+}
+
+polygon {
+    fill: black;
+    transition: all .2s ease-out;
+} 
+
+polygon .arrow-middle {
+    opacity: 0.5;
+}
+
+.asistencia{
+    background-image: url(../images/fondo.jpg);
+    background-size: cover;
+    width: 100%;
+    padding: 25px;
+}
+
+footer{
+    background-color: #4c775e;
+    width: 100%;
+}
+
+footer p{
+    color: white;
+}
+
 @media (min-width: 320px) and (max-width: 480px) {
     #nombre{  
-        left: 11%;
-        height: 62%;
-        top: 18%;
+        left: 6%;
+        height: 70%;
+        top: 9%;
     }
 
-    #portada{
-        width: 229%;
-        transform: translate(-199px, 5px);
+    .pantalla{
+        display: none;
+    }
+
+    .mobile{
+        display: block;
+    }
+
+    #portada-mobile{
+        width: 100%;
+        height: 100vh;
+        position: relative;
         opacity: 0.85;
     }
 
     .ceremonia-fiesta{
         flex-wrap: wrap;
+        margin-block-start: 30px;
+    }
+
+    .box {
+        padding: 30px;
+    }
+
+    .fotos{
+        display: none;
+    }
+
+    .carousel {
+        display: block;
+        position: relative;
+        width: 330px;
+        height: 321px;
+        overflow: hidden;
+        background-color: #cdcdcd;
+        background-size: cover;
+        margin-bottom: 50px;
+        margin: 34px;
+    }
+
+    .carousel-item {
+        position: absolute;
+        display: block;
+        width: 318px;
+        height: 321px;
+    }
+
+    .active {
+        left: 0;
+        transition: all 0.1s ease-out;
+    }
+
+    .active div{
+        height: 100%;
+    }
+
+    .uno {
+        background-image: url(../images/nahuylula/uno.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+    .dos {
+        background-image: url(../images/nahuylula/dos.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+    .tres {
+        background-image: url(../images/nahuylula/tres.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+    .cuatro {
+        background-image: url(../images/nahuylula/cuatro.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
     }
 }
   
